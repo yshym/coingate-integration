@@ -6,8 +6,10 @@
 
 
 {% block content %}
-    {% if order_list.0.status == None %}
+    {% if order_list.count != 0 and order_list.0.status == None %}
         The maximum number of requests per hour has been exceeded
+    {% elif order_list.count == 0 %}
+        You haven't created any order.
     {% else %}
         <table class="table">
             <thead>
