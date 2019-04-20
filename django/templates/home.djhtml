@@ -1,0 +1,31 @@
+{% extends 'base.djhtml' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Home ' %} - {{ block.super }}{% endblock title %}
+
+
+{% block content %}
+    {{ self.get_current_url }}
+
+    <a
+        class="btn btn-success w-100 create-order"
+        href="{% url 'coingate:order_create' %}">
+        {% trans 'Create order' %}
+    </a>
+    <br/>
+    <br/>
+    <a
+        class="btn btn-info w-100 orders-list"
+        href="{% url 'coingate:order_list' %}">
+        {% trans 'Orders list' %}
+    </a>
+    <br/>
+    <br/>
+
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status" style="display: none;">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+{% endblock content %}

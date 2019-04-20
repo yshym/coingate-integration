@@ -1,0 +1,52 @@
+{% extends 'base.djhtml' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Orders list' %} - {{ block.super }}{% endblock title %}
+
+
+{% block content %}
+    {% if order_list.0.status == None %}
+        The maximum number of requests per hour has been exceeded
+    {% else %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">{% trans 'price amount' %}</th>
+                    <th scope="col">{% trans 'price currency' %}</th>
+                    <th scope="col">{% trans 'title' %}</th>
+                    <th scope="col">{% trans 'status' %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in order_list %}
+                    <tr class="border rounded">
+                        <td>{{ order.price_amount }}</td>
+                        <td>{{ order.price_currency }}</td>
+                        <td><a href="{{ order.payment_url }}">{{ order.title }}</a></td>
+                        <td>
+                            <span class="badge
+                                        {% if order.status == 'pending' or order.status == 'confirming' %}
+                                            badge-warning
+                                        {% elif order.status == 'paid' %}
+                                            badge-success
+                                        {% elif order.status == 'new' %}
+                                            badge-secondary
+                                        {% else %}
+                                            badge-danger
+                                        {% endif %}">
+                                {{ order.status }}
+                            </span>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border" role="status" style="display: none;">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    {% endif %}
+{% endblock content %}

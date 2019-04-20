@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-20 21:46+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: coingate/models.py:10
+msgid "order id"
+msgstr "id заказа"
+
+#: coingate/models.py:11 templates/order_list.djhtml:15
+msgid "price amount"
+msgstr "количество валюты"
+
+#: coingate/models.py:22 templates/order_list.djhtml:16
+msgid "price currency"
+msgstr "валюта"
+
+#: coingate/models.py:24 templates/order_list.djhtml:17
+msgid "title"
+msgstr "заголовок"
+
+#: coingate/models.py:25
+msgid "description"
+msgstr "описание"
+
+#: coingate/models.py:30
+msgid "payment url"
+msgstr "ссылка для олаты"
+
+#: coingate/models.py:37
+msgid "Order"
+msgstr "id заказа"
+
+#: coingate/models.py:38
+msgid "Orders"
+msgstr "заказы"
+
+#: config/settings.py:118
+msgid "English"
+msgstr "Английский"
+
+#: config/settings.py:119
+msgid "Russian"
+msgstr "Русский"
+
+#: templates/home.djhtml:5
+msgid "Home "
+msgstr "Главная"
+
+#: templates/home.djhtml:14 templates/order_create.djhtml:7
+#: templates/order_create.djhtml:14
+msgid "Create order"
+msgstr "Создать заказ"
+
+#: templates/home.djhtml:21 templates/order_list.djhtml:5
+msgid "Orders list"
+msgstr "Список заказов"
+
+#: templates/order_create.djhtml:20
+msgid "Create"
+msgstr "Создать"
+
+#: templates/order_list.djhtml:18
+msgid "status"
+msgstr "статус"
