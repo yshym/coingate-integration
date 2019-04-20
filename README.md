@@ -17,7 +17,7 @@ Create new order:
 ![Screenshot1](readme_screenshots/screenshot1.png)
 ![Screenshot2](readme_screenshots/screenshot2.png)
 
-(After the creation you will be redireced to your payment at [coinsgate.com](https://coingate.com))
+(After the creation you will be redirected to your payment at [coinsgate.com](https://coingate.com))
 
 Check the list of all orders you created:
 
