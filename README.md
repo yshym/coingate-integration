@@ -24,6 +24,6 @@ Check the list of all orders you created:
 ![Screenshot3](readme_screenshots/screenshot3.png)
 ![Screenshot4](readme_screenshots/screenshot4.png)
 
-And toggle langugage any moment you want:
+And toggle language any moment you want:
 
 ![Screenshot5](readme_screenshots/screenshot5.png)
