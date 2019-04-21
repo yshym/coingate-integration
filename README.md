@@ -19,7 +19,7 @@ Create new order:
 
 (After the creation you will be redirected to your payment at [coinsgate.com](https://coingate.com))
 
-Check the list of all orders you created:
+Check the list of all the orders you've created:
 
 ![Screenshot3](readme_screenshots/screenshot3.png)
 ![Screenshot4](readme_screenshots/screenshot4.png)
